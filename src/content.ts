@@ -1,0 +1,127 @@
+import "@fontsource/mukta/600.css";
+import "@fontsource/mukta/800.css";
+import type { Site } from "./lib";
+
+export const SITE: Site = {
+  name: "Veg Haveli",
+  sub: { en: "Pure veg family restaurant · Sohna–Gurgaon Road", hi: "शुद्ध शाकाहारी फ़ैमिली रेस्टोरेंट · सोहना–गुड़गांव रोड" },
+  banner: { en: "Birthday or engagement coming up? Ask about the party area", hi: "जन्मदिन या सगाई है? पार्टी एरिया के बारे में पूछिए" },
+  phone: "919253115771",
+  phoneDisplay: "+91 92531 15771",
+  lat: 28.2554534,
+  lon: 77.0681996,
+  hours: [[12, 23.5], [12, 23.5], [12, 23.5], [12, 23.5], [12, 23.5], [12, 23.5], [12, 23.5]],
+  theme: {
+    dark: true,
+    bg: "#0b120c",
+    bg2: "#111a12",
+    panel: "#16211a",
+    ink: "#f3efe2",
+    ink2: "#c4c6b8",
+    ink3: "#858d82",
+    line: "#233127",
+    accent: "#e8c15a",
+    onAccent: "#241a00",
+    display: "Mukta",
+    weight: 800,
+    upper: false,
+  },
+  scene: "pour",
+  align: "left",
+  hero: {
+    title: [
+      { en: "Pure veg, made for", hi: "शुद्ध शाकाहारी, बना है" },
+      { en: "birthdays and big dinners.", hi: "जन्मदिन और बड़ी दावतों के लिए।" },
+    ],
+    proof: {
+      en: "4.6 on Google from 793 reviews. Dal makhani, achari chaap and the Veg Haveli Special Paneer, with a kids play area, on the Sohna–Gurgaon road.",
+      hi: "गूगल पर 793 रिव्यू से 4.6। दाल मखनी, अचारी चाप और वेज हवेली स्पेशल पनीर, बच्चों के खेलने की जगह के साथ, सोहना–गुड़गांव रोड पर।",
+    },
+    fallback: "/img/p3.jpg",
+  },
+  marquee: ["Dal Makhani", "Special Paneer", "Achari Chaap", "Aalu Paratha", "Chilli Garlic Noodles", "Shahi Paneer", "Thali", "Soya Chaap"],
+  dishes: {
+    title: { en: "What guests tell you to order", hi: "मेहमान क्या मंगाने को कहते हैं" },
+    body: { en: "Every line is a real Google review.", hi: "हर लाइन असली गूगल रिव्यू है।" },
+    layout: "list",
+    items: [
+      { name: { en: "Veg Haveli Special Paneer", hi: "वेज हवेली स्पेशल पनीर" }, quote: "Amazing food, great service. Try their speacial dish - Veg Haveli Special Paneer.", img: "/img/p3.jpg" },
+      { name: { en: "Paneer wrapped in papad", hi: "पापड़ में लिपटा पनीर" }, quote: "One person explained their special paneer dish to us because we couldn't figure out. It was paneer wrapped in papad also very tasty." },
+      { name: { en: "Aalu Paratha", hi: "आलू पराठा" }, quote: "The highlight of the meal was definitely the Aalu Paratha – a must-try for anyone visiting!" },
+      { name: { en: "Achari Chaap & Noodles", hi: "अचारी चाप और नूडल्स" }, quote: "One of the must-try dishes are Achari chaap and chilli garlic noodles." },
+      { name: { en: "Dal Makhni & the rest", hi: "दाल मखनी और बाकी सब" }, quote: "we ordered Dal Makhni, Mix Veg, Tandoori Roti, Fried Rice & Munchurion.... all good" },
+    ],
+  },
+  gallery: {
+    title: { en: "Inside the haveli", hi: "हवेली के अंदर" },
+    layout: "mosaic",
+    photos: [
+      { src: "/img/p1.jpg", alt: "Dining room at Veg Haveli", wide: true },
+      { src: "/img/p5.jpg", alt: "Balloon decoration for a party" },
+      { src: "/img/p6.jpg", alt: "Decorated seating area" },
+      { src: "/img/p4.jpg", alt: "Main dining hall", wide: true },
+      { src: "/img/p3.jpg", alt: "Paneer curry" },
+    ],
+  },
+  feature: {
+    kind: "occasions",
+    title: { en: "Families book it for the big days", hi: "बड़े मौकों के लिए परिवार यहीं बुक करते हैं" },
+    body: { en: "Birthdays, an engagement, kids' parties. Here is how guests described them.", hi: "जन्मदिन, सगाई, बच्चों की पार्टी। मेहमानों ने ऐसे बताया।" },
+    img: "/img/p9.jpg",
+    items: [
+      { label: { en: "Birthdays", hi: "जन्मदिन" }, quote: "We celebrated my son's birthday over there they were very sweet and the food was also tasty" },
+      { label: { en: "Engagement party", hi: "सगाई की पार्टी" }, quote: "We booked Veg Haveli Restaurant for our engagement party, and we couldn't have made a better choice! The service was excellent — everything was well-organized and smooth." },
+      { label: { en: "Kids play area", hi: "बच्चों का प्ले एरिया" }, quote: "I really like the ambience and the option for kids to play in small play area along side so you can also enjoy your meal." },
+      { label: { en: "Family functions", hi: "पारिवारिक समारोह" }, quote: "The kids’ play zone is amazing, and the place is very clean with a beautiful interior. Highly recommended for family functions and kids’ parties!" },
+    ],
+  },
+  reviews: {
+    title: { en: "630 of 793 reviews are five stars", hi: "793 में से 630 रिव्यू पांच स्टार" },
+    rating: 4.6,
+    dist: [630, 88, 34, 10, 31],
+    quotes: [
+      { quote: "Excellent food quality. They serve with love..", stars: 5 },
+      { quote: "Celebrating my Father Birthday, Best in class service and tasty food", stars: 5 },
+      { quote: "Delicious food, reasonable price, kids play area.", stars: 5 },
+    ],
+  },
+  visit: {
+    title: { en: "Opposite 4 Season resort", hi: "4 सीज़न रिज़ॉर्ट के सामने" },
+    img: "/img/p1.jpg",
+    alt: "Dining room at Veg Haveli",
+    address: { en: "Chungi No. 1, Main Sohna–Gurgaon Road, near Aastha Clinic, Rajoria Nagar, Sohna", hi: "चुंगी नंबर 1, मेन सोहना–गुड़गांव रोड, आस्था क्लिनिक के पास, राजोरिया नगर, सोहना" },
+    note: { en: "Open 12pm to 11:30pm, every day.", hi: "हर दिन दोपहर 12 से रात 11:30 बजे तक।" },
+  },
+  pour: { from: "pan", into: "kadhai", liquid: "#5c2814", foam: "#8a4422", thick: 2.2, hot: true, butter: true },
+  story: [
+    { kicker: { en: "The paneer", hi: "पनीर" }, title: { en: "Ask for the house special.", hi: "हाउस स्पेशल मांगिए।" }, quote: "Amazing food, great service. Try their speacial dish - Veg Haveli Special Paneer." },
+    { kicker: { en: "The party", hi: "पार्टी" }, title: { en: "Birthdays, sorted.", hi: "जन्मदिन, सब तैयार।" }, quote: "We celebrated my son's birthday over there they were very sweet and the food was also tasty" },
+    { kicker: { en: "The kitchen", hi: "रसोई" }, title: { en: "Served with love.", hi: "प्यार से परोसा।" }, quote: "Excellent food quality. They serve with love.." },
+  ],
+  build: {
+    title: { en: "Plan your meal or party in a few taps", hi: "कुछ टैप में खाना या पार्टी प्लान कीजिए" },
+    body: { en: "Tap the dishes guests rave about, set how many and when. It goes to WhatsApp exactly as you see it.", hi: "मेहमानों की पसंदीदा डिश टैप करें, कितने लोग और कब, चुनें। मैसेज व्हाट्सऐप पर ठीक ऐसे ही जाएगा।" },
+    pick: { label: { en: "Booking", hi: "बुकिंग" }, options: [
+      { name: { en: "Table", hi: "टेबल" } },
+      { name: { en: "Birthday party", hi: "बर्थडे पार्टी" }, note: { en: "Party area and kids play zone", hi: "पार्टी एरिया और बच्चों का प्ले ज़ोन" } },
+      { name: { en: "Engagement / function", hi: "सगाई / फ़ंक्शन" } },
+    ] },
+    items: [
+      { en: "Special Paneer", hi: "स्पेशल पनीर" },
+      { en: "Dal Makhni", hi: "दाल मखनी" },
+      { en: "Achari Chaap", hi: "अचारी चाप" },
+      { en: "Aalu Paratha", hi: "आलू पराठा" },
+      { en: "Chilli Garlic Noodles", hi: "चिली गार्लिक नूडल्स" },
+      { en: "Shahi Paneer", hi: "शाही पनीर" },
+      { en: "Thali", hi: "थाली" },
+    ],
+    people: true,
+    when: true,
+    hello: { en: "Hi Veg Haveli, I'd like:", hi: "नमस्ते वेज हवेली, मुझे चाहिए:" },
+  },
+  waHello: {
+    en: "Hi Veg Haveli, I'd like to book. Table / party: , people: , date and time: ",
+    hi: "नमस्ते वेज हवेली, मुझे बुकिंग करनी है। टेबल / पार्टी: , लोग: , तारीख़ और समय: ",
+  },
+  order: ["build", "dishes", "feature", "gallery", "reviews", "visit"],
+};
